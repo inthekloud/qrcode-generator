@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>VCARD QR Code Generator</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/floating-labels.css">
+    <style>
+        input {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="vcard-form" class="form-signin">
+
+            <div class="text-center mb-4">
+                <h3>Enter the information below to create the equival QR code</h3>
+                <hr/>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="full-name" class="form-control" placeholder="Full Name" autofocus>
+                <label for="full-name">Full name</label>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="org-name" class="form-control" placeholder="Organization">
+                <label for="org-name">Organization</label>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="title" class="form-control" placeholder="Title">
+                <label for="title">Title</label>
+            </div>
+            <div class="form-label-group">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="tel-work" class="form-control" placeholder="Work tel">
+                <label for="tel-work">Work telephone</label>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="tel-mobile" class="form-control" placeholder="Mobile">
+                <label for="tel-work">Mobile</label>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="addr-work" class="form-control" placeholder="Address">
+                <label for="addr-work">Business address</label>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">
+                Generate code
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
