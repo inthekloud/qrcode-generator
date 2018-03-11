@@ -1,0 +1,22 @@
+runtime: php55
+api_version: 1
+
+handlers:
+
+- url: /css
+  static_dir: client/css
+  
+- url: /js
+  static_dir: js
+  
+# Serve php scripts.
+
+- url: /vcard_submit.php
+  script: client/vcard_submit.php
+  
+- url: /(.+\.php)$
+  script: \1
+  
+
+- url: /.*
+  script: client/vcard_form.html
